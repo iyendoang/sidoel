@@ -81,8 +81,10 @@ if ($pg == 'storePeriode') {
         if ($cek_periode == 0) {
             mysqli_query($koneksi, "UPDATE t_ppdbperiode SET ppdbperiode_actived=0");
             $add_exec = insert($koneksi, 't_ppdbperiode', $t_ppdbperiode);
-            if ($add_exec) {
+            if ($add_exec == true) {
                 $response = [
+                    'data'        => $add_exec,
+                    'data2'        => $t_ppdbperiode,
                     'status'        => 200,
                     'icon'          => "success",
                     'message'       => "Insert Data Prestasi Berhasil",

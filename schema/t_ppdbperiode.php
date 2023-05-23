@@ -7,7 +7,7 @@ if (!$t_ppdbperiodeTableExists) {
         tahunajaran_id INT(10) DEFAULT NULL UNIQUE,
         ppdbperiode_opened DATE DEFAULT NULL,
         ppdbperiode_closed DATE DEFAULT NULL,
-        ppdbjurusan_actived int(10) DEFAULT NULL,
+        ppdbperiode_actived int(10) DEFAULT NULL,
         update_at DATETIME DEFAULT NULL
     )";
     if (mysqli_query($koneksi, $sql)) {

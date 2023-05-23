@@ -192,9 +192,14 @@ $t_ppdbperiode = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM t_ppdb
         </div>
     </div>
 </div>
+<div id="targetElementId"></div>
+
 <iframe id="loadFrameRegisters" src="" style="display:none;"></iframe>
+<iframe id="LoadPrintFormRegist" src="" style="display:none;"></iframe>
 <script src="Registrations/scripts.js"></script>
 <script>
+    
+
     function printPDF(tahunajaran_id) {
         var frame = document.getElementById('loadFrameRegisters');
         var printUrl = "Registrations/Components/PrintRegister.php?tahunajaran_id=" + tahunajaran_id;

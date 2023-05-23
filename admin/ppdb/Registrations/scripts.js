@@ -229,6 +229,11 @@ $(function () {
                     '" type="button" class="btn btn-sm btn-icon btn-success me-25 dtUnactivated" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik Untuk Unactivated">' +
                     feather.icons["check"].toSvg({ class: "font-medium-2" }) +
                     "</button>" +
+                    '<a href="Registrations/Components/PrintFormRegist.php?id=' +
+                    ppdbregist_id +
+                    '" class="btn btn-sm btn-icon btn-secondary me-25" data-bs-toggle="tooltip" data-bs-placement="top" title="Cetak Formulir" target="_blank">' +
+                    feather.icons["printer"].toSvg({ class: "font-medium-2" }) +
+                    "</a>" +
                     '<button type="button" data-id="' +
                     ppdbregist_id +
                     '" class="btn btn-sm btn-icon btn-danger deleteRegistrations" >' +
