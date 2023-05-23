@@ -41,7 +41,7 @@ if (isset($_SESSION["ppdbregist_nisn"])) {
             <div class="content-wrapper container-xxl p-0">
                 <div class="content-body">
                     <div class="row">
-                        <?php include 'Layouts/_contents.php' ?>
+                        <?php include 'Layouts/_Contents.php' ?>
                     </div>
                 </div>
             </div>
